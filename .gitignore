@@ -1,0 +1,12 @@
+.env
+.ig_session.json
+venv/
+__pycache__/
+*.pyc
+output/review/*
+output/approved/*
+output/posted/*
+!output/review/.gitkeep
+!output/approved/.gitkeep
+!output/posted/.gitkeep
+*.DS_Store
