@@ -1,0 +1,92 @@
+# ============================================================
+# Nothingness IG - Configuration
+# ============================================================
+
+# Azure AI Foundry settings (credentials in .env file)
+azure:
+  api_version: "2025-04-01-preview"
+
+# Video output settings
+video:
+  width: 1080
+  height: 1920
+  fps: 24
+  # Font for text overlays (system font name or path to .ttf file)
+  font: "Helvetica"
+  font_size: 44
+  title_font_size: 56
+  # Background music volume relative to voiceover (0.0 - 1.0)
+  bg_music_volume: 0.08
+  # Crossfade duration between image segments (seconds)
+  crossfade: 0.8
+  # Ken Burns zoom range (1.0 = no zoom)
+  zoom_start: 1.0
+  zoom_end: 1.15
+
+# Voiceover settings (edge-tts)
+voice:
+  # Voice name (run: edge-tts --list-voices to see all options)
+  # Good choices for spiritual content:
+  #   en-US-GuyNeural       - deep male, English
+  #   en-US-AndrewNeural    - calm male, English
+  #   en-IN-PrabhatNeural   - Indian English male
+  #   en-IN-NeerjaNeural    - Indian English female
+  name: "en-US-AndrewNeural"
+  # Speaking rate adjustment (e.g., "-15%" for slower, "+10%" for faster)
+  rate: "-10%"
+  # Volume adjustment
+  volume: "+0%"
+
+# Image generation settings
+image:
+  # Number of images to generate per reel
+  count: 4
+  # Image size (Azure supports: 1024x1024, 1024x1536, 1536x1024)
+  size: "1024x1536"
+  quality: "medium"
+
+# Content settings
+content:
+  # Default language for generated content
+  language: "English"
+  # Max narration length (seconds) - keeps reels short and engaging
+  max_duration_seconds: 60
+  # Teachers and their styles (used in prompt engineering)
+  teachers:
+    Ashtavakra:
+      full_name: "Ashtavakra"
+      tradition: "Advaita Vedanta"
+      style: "Direct, absolute, uncompromising non-dual pointing. No path, no practice - just pure awareness recognizing itself."
+      source: "Ashtavakra Gita"
+    Buddha:
+      full_name: "Gautama Buddha"
+      tradition: "Buddhism"
+      style: "Compassionate, uses parables and analogies, practical wisdom about suffering, impermanence, and liberation."
+      source: "Dhammapada, Suttas"
+    Krishnamurti:
+      full_name: "Jiddu Krishnamurti"
+      tradition: "Independent / No tradition"
+      style: "Intellectual, deeply questioning, dismantles all beliefs and authorities. Truth is a pathless land."
+      source: "Talks and writings"
+    Osho:
+      full_name: "Osho (Rajneesh)"
+      tradition: "Neo-Advaita / Zen / Tantra blend"
+      style: "Provocative, humorous, uses stories from all traditions. Blends Eastern mysticism with modern psychology."
+      source: "Discourses"
+
+# Instagram posting settings
+posting:
+  # Add this disclaimer to all posts
+  disclaimer: "Visuals created using AI for educational and inspirational purposes."
+  # Default hashtags added to every post
+  default_hashtags:
+    - nothingness
+    - shunya
+    - philosophy
+    - spiritualawakening
+    - consciousness
+    - awareness
+    - nonduality
+    - advaita
+    - meditation
+    - innerpeace
